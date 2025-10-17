@@ -1,0 +1,78 @@
+/* Header.css */
+.navItem {
+    transition: transform 0.5s ease, letter-spacing 0.5s ease;
+
+}
+
+.navItem:hover {
+    transform: scale(1.15) translateY(-10px);
+    letter-spacing: 1px;
+}
+
+
+.classButton {
+    background-color: #50C878; /* PRIMARY_COLOR */
+    transition: background-color 1s ease, transform 0.5s ease, letter-spacing 0.5s ease;
+    cursor: pointer;
+}
+
+.classButton:hover {
+    background-color: transparent; /* darker green for hover effect */
+    transform: scale(1.05) translateY(-10px);
+    letter-spacing: 3px;
+    color: #50C878;
+}
+
+.classButtonText {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 19.5px;
+    text-align: center;
+    margin: 0;
+}
+
+.box::before {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-color: white;
+    /*background-color: #50C878;*/
+
+    top: -10px;
+    left: -10px;
+    transition: 1s ease;
+    rotate: 45deg;
+    /*border-radius: 999px;*/
+}
+
+.box::after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+    border: 2px solid white;
+    /*border: 2px solid #50C878;*/
+
+    background-color: black;
+    bottom: -10px;
+    right: -10px;
+    transition: 1s ease;
+    rotate: 45deg;
+    /*border-radius: 999px;*/
+}
+
+.box:hover::before {
+    left: calc(100% - 20px);
+    border-radius: 999px;
+}
+
+.box:hover::after {
+    right: calc(100% - 20px);
+    border-radius: 999px;
+}
+
+.box {
+    /*cursor: url(../../assets/images/icons8-golf-48.png), auto;*/
+}
