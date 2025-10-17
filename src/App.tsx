@@ -8,7 +8,7 @@ const isProduction = import.meta.env.MODE === 'production';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter basename={isProduction ? "/beaver-creek/" : "/"}>
+        <BrowserRouter basename={isProduction ? "/green_reading_web/" : "/"}>
             <AppRoutes />
         </BrowserRouter>
     </StrictMode>

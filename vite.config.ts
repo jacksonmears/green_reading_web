@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
-    base: mode === 'production' ? '/beaver-creek/' : '/',
+    base: mode === 'production' ? '/green_reading_web/' : '/',
   }
 })
